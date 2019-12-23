@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="paper-full.min.js"></script>
+    <script type="text/paperscript" canvas="waveCanvas" src="code.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <input type="file" id="import" />
+      <button id="play">Play</button>
+      <button id="reset">Reset</button>
+      <button id="clear">Clear</button>
+      <span id="speed_val">1</span>x
+      <input class="sliders" type="range" id="speed" min="0" max="5" step=".5" value="1" />
+
+      <select id="phasor_tails">
+        <option value="tails_at_origin">Tails at origin</option>
+        <option value="vector_addition">Vector addition</option>
+      </select>
+      <select id="wave_option">
+        <option value="show_all">Show all</option>
+        <option value="resultant_only">Resultant only</option>
+        <option value="individual_only">Individual only</option>
+      </select>
+      <button id="export_waves">Export</button>
+      <!--<button id="toggle_timer">Toggle Timer</button>-->
+      <button id="add_wave">Add wave</button>
+
+      <br>
+      <div id="container">
+        <canvas id="waveCanvas" keepalive="true"></canvas>
+      </div>
+
+      <!-- Table goes inside of adderArea. -->
+      <input type="checkbox" id="lock_a">lock A</input>
+      <input type="checkbox" id="lock_f">lock f</input>
+      <input type="checkbox" id="lock_phi">lock &#966;</input>
+      ---- <i>Medium = 10 m/s</i>
+
+      <div class="center" id="adderArea"> </div> 
+
+      <h1 id="timer_area" style="clear:both;"><span id="time_elapsed"></span></h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+
+
+
+html, body {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+#dir {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+
+#waveCanvas {
+    border: 1px solid black;
+    float: left;
+    width: 70%;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+#adderArea {
+    margin-left:70%;
+}
+
+
+.tables {
+    border-collapse: collapse;
+    height: 100%;
+    width: 29%;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+#exportArea {
+    margin-left: 70%;
+    border: 1px solid black;
+    width: 29%;
+}
+
+#config {
+    border: 1px solid black;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+.sliders {
+    width: 80px;
+}
+
+
+#amplitude {
+    width: 80px;
+}
+
+#wavelength {
+    width: 80px;
+}
+
+#phi {
+    width: 80px;
+}
+
+#speed {
+    width: 80px;
+}
+
+.center {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vals {
+    display: inline-block;
+    width: 20px;
+}
+
+h1 {
+    font-family: "Courier New";
+    font-size: 60px;
+}
+
+
+button,select,input {
+    font-family: "Courier New";
+}
